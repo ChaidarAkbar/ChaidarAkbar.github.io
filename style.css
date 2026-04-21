@@ -155,7 +155,6 @@ section {
   flex-direction: column;
   justify-content: center;
   padding-top: 140px;
-  padding-bottom: 120px;
   overflow: hidden;
 }
 
@@ -722,7 +721,7 @@ footer {
   .contact-card { padding: 2rem 1.5rem; }
 }
 
-@media (max-height: 650px) {
+@media (max-height: 750px) {
   .hero-scroll-line {
     display: none !important;
   }
