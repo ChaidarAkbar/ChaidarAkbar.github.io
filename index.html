@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CChaidar Akbar Akbar — Portfolio</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/TextPlugin.min.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursorDot"><div class="cursor-dot"></div></div>
+  <div class="cursor" id="cursorRing"><div class="cursor-ring"></div></div>
+
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+
+  <nav id="navbar">
+    <a href="#home" class="nav-logo">H<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home">
+    <div class="hero-eyebrow" id="heroEyebrow">Creative Developer &amp; Designer</div>
+    <h1 class="hero-name" id="heroName">CChaidar Akbar Akbar</h1>
+    <p class="hero-subtitle" id="heroSubtitle">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — crafting digital experiences that feel alive.
+    </p>
+    <div class="hero-cta" id="heroCta">
+      <a href="#portfolio" class="btn-primary">View Work
+        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <a href="#contact" class="btn-ghost">Get in Touch</a>
+    </div>
+
+    <div class="hero-scroll-line" id="heroScroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <section id="about">
+    <div class="about-grid">
+      <div class="about-left">
+        <div class="section-label reveal">About Me</div>
+        <h2 class="section-title reveal">Crafting pixels<br/>with purpose.</h2>
+        <div class="about-card reveal">
+          <p class="about-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <p class="about-text">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+
+          <div class="skills-wrap">
+            <div class="skill-row">
+              <div class="skill-meta"><span>UI / UX Design</span><span>92%</span></div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="92"></div></div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-meta"><span>Frontend Engineering</span><span>88%</span></div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="88"></div></div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-meta"><span>Motion & Animation</span><span>85%</span></div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-row">
+              <div class="skill-meta"><span>Brand Strategy</span><span>78%</span></div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="78"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-stats reveal">
+          <div class="stat"><div class="stat-num">5+</div><div class="stat-label">Years Exp.</div></div>
+          <div class="stat"><div class="stat-num">48</div><div class="stat-label">Projects</div></div>
+          <div class="stat"><div class="stat-num">32</div><div class="stat-label">Clients</div></div>
+        </div>
+      </div>
+
+      <div class="about-right reveal">
+        <div class="about-image-frame">
+          <div class="about-image-bg">
+            <div class="about-image-placeholder">H</div>
+          </div>
+          <div class="about-deco-line"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <section id="portfolio">
+    <div class="portfolio-header">
+      <div>
+        <div class="section-label reveal">Selected Works</div>
+        <h2 class="section-title reveal">Projects that<br/>define craft.</h2>
+      </div>
+      <a href="#contact" class="btn-ghost reveal">All Works →</a>
+    </div>
+
+    <div class="portfolio-grid">
+
+      <div class="card reveal" data-tilt>
+        <div class="card-img">
+          <div class="card-img-grid"></div>
+          <div class="card-tag">Design System</div>
+          <div class="card-img-num">01</div>
+        </div>
+        <div class="card-body">
+          <div class="card-title">Noctua UI Framework</div>
+          <div class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.</div>
+          <div class="card-footer">
+            <a href="#" class="card-link">View Case Study
+              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <div class="card-tech">
+              <div class="tech-dot"></div><div class="tech-dot"></div><div class="tech-dot"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card reveal" data-tilt>
+        <div class="card-img">
+          <div class="card-img-grid"></div>
+          <div class="card-tag">Web App</div>
+          <div class="card-img-num">02</div>
+        </div>
+        <div class="card-body">
+          <div class="card-title">Aether Dashboard</div>
+          <div class="card-desc">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis.</div>
+          <div class="card-footer">
+            <a href="#" class="card-link">View Case Study
+              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <div class="card-tech">
+              <div class="tech-dot"></div><div class="tech-dot"></div><div class="tech-dot"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card reveal" data-tilt>
+        <div class="card-img">
+          <div class="card-img-grid"></div>
+          <div class="card-tag">Branding</div>
+          <div class="card-img-num">03</div>
+        </div>
+        <div class="card-body">
+          <div class="card-title">Solara Brand Identity</div>
+          <div class="card-desc">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+          <div class="card-footer">
+            <a href="#" class="card-link">View Case Study
+              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <div class="card-tech">
+              <div class="tech-dot"></div><div class="tech-dot"></div><div class="tech-dot"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card reveal" data-tilt>
+        <div class="card-img">
+          <div class="card-img-grid"></div>
+          <div class="card-tag">Motion</div>
+          <div class="card-img-num">04</div>
+        </div>
+        <div class="card-body">
+          <div class="card-title">Kinetic Type Reel</div>
+          <div class="card-desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem.</div>
+          <div class="card-footer">
+            <a href="#" class="card-link">View Case Study
+              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <div class="card-tech">
+              <div class="tech-dot"></div><div class="tech-dot"></div><div class="tech-dot"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card reveal" data-tilt>
+        <div class="card-img">
+          <div class="card-img-grid"></div>
+          <div class="card-tag">E-Commerce</div>
+          <div class="card-img-num">05</div>
+        </div>
+        <div class="card-body">
+          <div class="card-title">Veld Commerce Platform</div>
+          <div class="card-desc">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores.</div>
+          <div class="card-footer">
+            <a href="#" class="card-link">View Case Study
+              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <div class="card-tech">
+              <div class="tech-dot"></div><div class="tech-dot"></div><div class="tech-dot"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card reveal" data-tilt>
+        <div class="card-img">
+          <div class="card-img-grid"></div>
+          <div class="card-tag">Mobile</div>
+          <div class="card-img-num">06</div>
+        </div>
+        <div class="card-body">
+          <div class="card-title">Helix Mobile App</div>
+          <div class="card-desc">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum.</div>
+          <div class="card-footer">
+            <a href="#" class="card-link">View Case Study
+              <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <div class="card-tech">
+              <div class="tech-dot"></div><div class="tech-dot"></div><div class="tech-dot"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <section id="contact">
+    <div class="contact-wrap">
+      <div class="section-label reveal" style="justify-content:center;">Contact</div>
+      <h2 class="section-title reveal">Let's build<br/>something great.</h2>
+      <div class="contact-card reveal">
+        <p class="contact-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Reach out and let's create together.</p>
+        <a href="mailto:Chaidar Akbar@example.com" class="contact-email">Chaidar Akbar@example.com</a>
+        <a href="#" class="btn-primary" style="margin: 0 auto 1.5rem; display:inline-flex;">
+          Send a Message
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <div class="social-row">
+          <a href="#" class="social-link" aria-label="GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12Z"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Dribbble">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 24C5.385 24 0 18.615 0 12S5.385 0 12 0s12 5.385 12 12-5.385 12-12 12zm10.12-10.358c-.35-.11-3.17-.953-6.384-.438 1.34 3.684 1.887 6.684 1.992 7.308 2.3-1.555 3.936-4.02 4.395-6.87zm-6.115 7.808c-.153-.9-.75-4.032-2.19-7.77l-.066.02c-5.79 2.015-7.86 6.025-8.04 6.4 1.73 1.358 3.92 2.166 6.29 2.166 1.42 0 2.77-.29 4.006-.816zm-11.62-2.073c.232-.4 3.045-5.055 8.332-6.765.135-.045.27-.084.405-.12-.26-.585-.54-1.167-.832-1.74C7.17 11.775 2.206 11.82 1.756 11.82l-.004.06c0 2.29.87 4.385 2.254 5.957zm-2.22-7.99c.464.013 4.952.}" /></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Twitter">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <a href="#home" class="footer-logo">Chaidar Akbar.</a>
+    <span class="footer-copy">© 2025 CChaidar Akbar Akbar. Crafted with precision.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
