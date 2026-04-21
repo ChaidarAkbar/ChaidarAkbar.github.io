@@ -31,7 +31,6 @@ body {
   position: fixed;
   pointer-events: none;
   z-index: 9999;
-  mix-blend-mode: difference;
 }
 .cursor-dot {
   width: 8px; height: 8px;
@@ -39,6 +38,7 @@ body {
   border-radius: 50%;
   transform: translate(-50%, -50%);
   transition: transform 0.1s;
+  box-shadow: 0 0 10px var(--cyan);
 }
 .cursor-ring {
   width: 36px; height: 36px;
@@ -46,8 +46,10 @@ body {
   border-radius: 50%;
   transform: translate(-50%, -50%);
   transition: transform 0.25s var(--transition), width 0.3s, height 0.3s, opacity 0.3s;
-  opacity: 0.5;
+  opacity: 0.3;
+
 }
+
 body:has(a:hover) .cursor-ring,
 body:has(button:hover) .cursor-ring,
 body:has(.card:hover) .cursor-ring {
