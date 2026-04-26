@@ -20,7 +20,6 @@
   --cv-radius-lg:      24px;
 }
 
-/* ── BODY / PAGE SHELL ── */
 .cv-body {
   margin: 0;
   padding: 0;
@@ -32,7 +31,6 @@
   -webkit-font-smoothing: antialiased;
 }
 
-/* Noise grain overlay */
 .cv-body::before {
   content: '';
   position: fixed;
@@ -43,7 +41,6 @@
   opacity: 0.35;
 }
 
-/* ── AMBIENT ORBS ── */
 .cv-orb {
   position: fixed;
   border-radius: 50%;
@@ -72,7 +69,6 @@
   to   { transform: translateY(50px) scale(1.1); }
 }
 
-/* ── PAGE WRAPPER ── */
 .cv-page {
   position: relative;
   z-index: 1;
@@ -81,15 +77,11 @@
   padding: 60px 5vw 100px;
 }
 
-/* ── REVEAL (initial state — GSAP drives the in-state) ── */
 .cv-reveal {
   opacity: 0;
   transform: translateY(28px);
 }
 
-/* ═══════════════════════════════════════════════════════════════════════════
-   HEADER
-   ═══════════════════════════════════════════════════════════════════════════ */
 .cv-header {
   display: flex;
   align-items: center;
@@ -107,7 +99,6 @@
   flex-wrap: wrap;
 }
 
-/* Top accent line */
 .cv-header::before {
   content: '';
   position: absolute;
@@ -123,7 +114,6 @@
   gap: 2rem;
 }
 
-/* AVATAR */
 .cv-avatar {
   position: relative;
   flex-shrink: 0;
@@ -157,7 +147,6 @@
   50%       { opacity: 1;   transform: scale(1.03); box-shadow: 0 0 20px var(--cv-cyan-glow); }
 }
 
-/* IDENTITY */
 .cv-header__eyebrow {
   margin: 0 0 0.35rem;
   font-size: 0.7rem;
@@ -186,7 +175,6 @@
   letter-spacing: 0.02em;
 }
 
-/* CONTACTS */
 .cv-header__contacts {
   list-style: none;
   margin: 0;
@@ -221,9 +209,6 @@
 }
 .cv-contact-item a:hover { color: var(--cv-cyan); }
 
-/* ═══════════════════════════════════════════════════════════════════════════
-   MAIN GRID
-   ═══════════════════════════════════════════════════════════════════════════ */
 .cv-grid {
   display: grid;
   grid-template-columns: 360px 1fr;
@@ -237,9 +222,6 @@
   gap: 2rem;
 }
 
-/* ═══════════════════════════════════════════════════════════════════════════
-   SECTION SHELL
-   ═══════════════════════════════════════════════════════════════════════════ */
 .cv-section {
   background: var(--cv-glass-bg);
   border: 1px solid var(--cv-glass-border);
@@ -293,9 +275,6 @@
   font-weight: 500;
 }
 
-/* ═══════════════════════════════════════════════════════════════════════════
-   SUMMARY
-   ═══════════════════════════════════════════════════════════════════════════ */
 .cv-summary__text {
   margin: 0 0 0.9rem;
   font-size: 0.9rem;
@@ -305,9 +284,6 @@
 }
 .cv-summary__text:last-child { margin-bottom: 0; }
 
-/* ═══════════════════════════════════════════════════════════════════════════
-   SKILL BARS
-   ═══════════════════════════════════════════════════════════════════════════ */
 .cv-skills-bars {
   display: flex;
   flex-direction: column;
@@ -336,15 +312,12 @@
 .cv-skill-bar__fill {
   height: 100%;
   border-radius: 2px;
-  width: 0;           /* GSAP animates this to data-width% */
+  width: 0;
   background: linear-gradient(to right, var(--cv-cyan), rgba(0,229,255,0.35));
   box-shadow: 0 0 8px var(--cv-cyan-glow);
   transition: none;
 }
 
-/* ═══════════════════════════════════════════════════════════════════════════
-   PILLS
-   ═══════════════════════════════════════════════════════════════════════════ */
 .cv-pills {
   display: flex;
   flex-wrap: wrap;
@@ -379,9 +352,6 @@
   background: var(--cv-cyan-dim);
 }
 
-/* ═══════════════════════════════════════════════════════════════════════════
-   EDUCATION
-   ═══════════════════════════════════════════════════════════════════════════ */
 .cv-edu-list {
   display: flex;
   flex-direction: column;
@@ -433,9 +403,6 @@
   font-weight: 300;
 }
 
-/* ═══════════════════════════════════════════════════════════════════════════
-   CERTIFICATIONS
-   ═══════════════════════════════════════════════════════════════════════════ */
 .cv-cert-list {
   list-style: none;
   margin: 0;
@@ -481,9 +448,6 @@
   letter-spacing: 0.03em;
 }
 
-/* ═══════════════════════════════════════════════════════════════════════════
-   TIMELINE + EXPERIENCE CARDS
-   ═══════════════════════════════════════════════════════════════════════════ */
 .cv-timeline {
   list-style: none;
   margin: 0;
@@ -500,7 +464,6 @@
   position: relative;
 }
 
-/* Vertical line connecting dots */
 .cv-timeline__item:not(:last-child) .cv-timeline__node::before {
   content: '';
   position: absolute;
@@ -540,7 +503,6 @@
   50%       { box-shadow: 0 0 16px var(--cv-cyan-glow), 0 0 30px rgba(0,229,255,0.2); }
 }
 
-/* EXP CARD */
 .cv-exp-card {
   background: var(--cv-glass-bg);
   border: 1px solid var(--cv-glass-border);
@@ -555,7 +517,6 @@
     transform    0.35s var(--cv-ease-spring),
     box-shadow   0.35s var(--cv-ease-out);
 }
-/* Left accent stripe */
 .cv-exp-card::after {
   content: '';
   position: absolute;
@@ -680,9 +641,6 @@
   color: var(--cv-silver-light);
 }
 
-/* ═══════════════════════════════════════════════════════════════════════════
-   PROJECTS GRID
-   ═══════════════════════════════════════════════════════════════════════════ */
 .cv-projects-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -779,9 +737,6 @@
   letter-spacing: 0.04em;
 }
 
-/* ═══════════════════════════════════════════════════════════════════════════
-   PRINT STYLES
-   ═══════════════════════════════════════════════════════════════════════════ */
 @media print {
   .cv-body { background: #fff; color: #000; }
   .cv-reveal { opacity: 1 !important; transform: none !important; }
@@ -804,9 +759,6 @@
   }
 }
 
-/* ═══════════════════════════════════════════════════════════════════════════
-   RESPONSIVE
-   ═══════════════════════════════════════════════════════════════════════════ */
 @media (max-width: 1100px) {
   .cv-grid {
     grid-template-columns: 320px 1fr;
@@ -819,7 +771,6 @@
     grid-template-columns: 1fr;
   }
   .cv-col--left {
-    /* On mobile, left (sidebar) comes after right (experience) */
     order: 2;
   }
   .cv-col--right { order: 1; }
@@ -853,7 +804,6 @@
   .cv-timeline__item { grid-template-columns: 20px 1fr; }
 }
 
-/* ── SCROLLBAR ── */
 .cv-body::-webkit-scrollbar { width: 4px; }
 .cv-body::-webkit-scrollbar-track { background: var(--cv-black); }
 .cv-body::-webkit-scrollbar-thumb { background: rgba(0,229,255,0.2); border-radius: 4px; }
