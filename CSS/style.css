@@ -720,7 +720,7 @@ footer {
   .contact-card { padding: 2rem 1.5rem; }
 }
 
-@media (max-height: 750px) {
+@media (max-height: 600px) {
   .hero-scroll-line {
     display: none !important;
   }
