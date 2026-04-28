@@ -614,16 +614,19 @@ section {
 }
 
 .contact-email {
-  font-family: 'Syne', sans-serif;
-  font-size: clamp(1.1rem, 3vw, 1.6rem);
-  font-weight: 700;
-  color: var(--cyan);
-  text-decoration: none;
-  letter-spacing: -0.02em;
-  transition: text-shadow 0.3s;
-  display: block;
-  margin-bottom: 2.5rem;
-}
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(1rem, 4vw, 1.6rem);
+    font-weight: 700;
+    color: var(--cyan);
+    text-decoration: none;
+    letter-spacing: -0.02em;
+    transition: text-shadow 0.3s;
+    display: block;
+    margin-bottom: 2.5rem;
+    word-break: break-all; 
+    overflow-wrap: break-word;
+  }
+  
 .contact-email:hover {
   text-shadow: 0 0 30px var(--cyan-glow);
 }
@@ -720,7 +723,7 @@ footer {
   .contact-card { padding: 2rem 1.5rem; }
 }
 
-@media (max-height: 600px) {
+@media (max-height: 750px) {
   .hero-scroll-line {
     display: none !important;
   }
